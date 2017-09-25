@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:id="@+id/multi_pan_layout"
+    tools:context=".UI.MainActivity">
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/master_list_fragment"
+        android:name="com.example.aml.popularmovies.UI.MainFragment"
+        android:layout_weight="2"
+
+        />
+<fragment
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:id="@+id/master_detail_fragment"
+    android:name="com.example.aml.popularmovies.UI.DetailsFragment"
+    />
+
+
+</LinearLayout>
